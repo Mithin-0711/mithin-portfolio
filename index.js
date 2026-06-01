@@ -133,7 +133,7 @@ themeToggle.addEventListener('click', () => {
         //     });
         // }
 
-emailjs.init("n1sFKycpEPoQ2CvwW");
+emailjs.init("your_public_key");
 
 const contactForm = document.getElementById("contactForm");
 
@@ -144,8 +144,8 @@ if(contactForm){
         e.preventDefault();
 
         emailjs.send(
-            "service_vahbfzq",
-            "template_2spqihc",
+            "your_service_id",
+            "your_template_id",
             {
                 name: document.getElementById("name").value,
 
